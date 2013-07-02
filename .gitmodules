@@ -1,0 +1,3 @@
+[submodule "external/Parse-RACExtensions"]
+	path = external/Parse-RACExtensions
+	url = https://github.com/kastiglione/Parse-RACExtensions.git

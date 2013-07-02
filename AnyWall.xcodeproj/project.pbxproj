@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2F3BD81214F20F9E00BDC051 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3BD81114F20F9E00BDC051 /* Default@2x.png */; };
 		2F3BD81414F2117100BDC051 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F3BD81314F2117100BDC051 /* Default.png */; };
+		556BB1B51783912400F9ED05 /* libParse-RACExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB1B01783910000F9ED05 /* libParse-RACExtensions.a */; };
+		556BB1B71783912400F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB1B61783912400F9ED05 /* libReactiveCocoa-iOS.a */; };
 		6D97114C16F7C36600B50B57 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D97114B16F7C36600B50B57 /* Default-568h@2x.png */; };
 		6D97114E16F7C60A00B50B57 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D97114D16F7C60A00B50B57 /* Parse.framework */; };
 		74D131E61582A7420065F1D2 /* Anywall-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74D131E51582A7420065F1D2 /* Anywall-Info.plist */; };
@@ -68,9 +70,35 @@
 		E5E3D1F314DA20220074DA18 /* PAWNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E3D1F114DA20210074DA18 /* PAWNewUserViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		556BB1AF1783910000F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB1A7178390FF00F9ED05 /* Parse-RACExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 556BB012177E04D000F9ED05;
+			remoteInfo = "Parse-RACExtensions";
+		};
+		556BB1B11783910000F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB1A7178390FF00F9ED05 /* Parse-RACExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 556BB023177E04D000F9ED05;
+			remoteInfo = "Parse-RACExtensionsTests";
+		};
+		556BB1B31783911400F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB1A7178390FF00F9ED05 /* Parse-RACExtensions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 556BB011177E04D000F9ED05;
+			remoteInfo = "Parse-RACExtensions";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2F3BD81114F20F9E00BDC051 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		2F3BD81314F2117100BDC051 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		556BB1A7178390FF00F9ED05 /* Parse-RACExtensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Parse-RACExtensions.xcodeproj"; path = "external/Parse-RACExtensions/Parse-RACExtensions.xcodeproj"; sourceTree = "<group>"; };
+		556BB1B61783912400F9ED05 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libReactiveCocoa-iOS.a"; path = "external/Parse-RACExtensions/external/ReactiveCocoa/ReactiveCocoaFramework/build/Release-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
 		6D97114B16F7C36600B50B57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		6D97114D16F7C60A00B50B57 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		74D131E51582A7420065F1D2 /* Anywall-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Anywall-Info.plist"; sourceTree = "<group>"; };
@@ -149,6 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556BB1B71783912400F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */,
+				556BB1B51783912400F9ED05 /* libParse-RACExtensions.a in Frameworks */,
 				E5C3304514D9C3E100089B64 /* QuartzCore.framework in Frameworks */,
 				E5C3304614D9C3E100089B64 /* Security.framework in Frameworks */,
 				E5C3304714D9C3E100089B64 /* libz.1.1.3.dylib in Frameworks */,
@@ -168,6 +198,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		556BB1A8178390FF00F9ED05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556BB1B01783910000F9ED05 /* libParse-RACExtensions.a */,
+				556BB1B21783910000F9ED05 /* Parse-RACExtensionsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E526A82D14F331D40074109C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +260,8 @@
 		E56E83F514D72E1100E856AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556BB1B61783912400F9ED05 /* libReactiveCocoa-iOS.a */,
+				556BB1A7178390FF00F9ED05 /* Parse-RACExtensions.xcodeproj */,
 				6D97114D16F7C60A00B50B57 /* Parse.framework */,
 				E5C3304314D9C3C900089B64 /* QuartzCore.framework */,
 				E5C3304114D9C3C200089B64 /* Security.framework */,
@@ -351,6 +392,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				556BB1B41783911400F9ED05 /* PBXTargetDependency */,
 			);
 			name = Anywall;
 			productName = AnyWall;
@@ -376,12 +418,35 @@
 			mainGroup = E56E83E714D72E1100E856AB;
 			productRefGroup = E56E83F314D72E1100E856AB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 556BB1A8178390FF00F9ED05 /* Products */;
+					ProjectRef = 556BB1A7178390FF00F9ED05 /* Parse-RACExtensions.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E56E83F114D72E1100E856AB /* Anywall */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		556BB1B01783910000F9ED05 /* libParse-RACExtensions.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libParse-RACExtensions.a";
+			remoteRef = 556BB1AF1783910000F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556BB1B21783910000F9ED05 /* Parse-RACExtensionsTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Parse-RACExtensionsTests.octest";
+			remoteRef = 556BB1B11783910000F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E56E83F014D72E1100E856AB /* Resources */ = {
@@ -448,6 +513,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		556BB1B41783911400F9ED05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-RACExtensions";
+			targetProxy = 556BB1B31783911400F9ED05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E56E83FF14D72E1100E856AB /* InfoPlist.strings */ = {
@@ -548,6 +621,10 @@
 				GCC_WARN_UNUSED_LABEL = NO;
 				INFOPLIST_FILE = "AnyWall/AnyWall-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TARGET_BUILD_DIR)/libParse-RACExtensions.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -574,6 +651,10 @@
 				GCC_WARN_UNUSED_LABEL = NO;
 				INFOPLIST_FILE = "AnyWall/AnyWall-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TARGET_BUILD_DIR)/libParse-RACExtensions.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -626,6 +707,10 @@
 				GCC_WARN_UNUSED_LABEL = NO;
 				INFOPLIST_FILE = "AnyWall/AnyWall-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TARGET_BUILD_DIR)/libParse-RACExtensions.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -679,6 +764,10 @@
 				GCC_WARN_UNUSED_LABEL = NO;
 				INFOPLIST_FILE = "AnyWall/AnyWall-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TARGET_BUILD_DIR)/libParse-RACExtensions.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
