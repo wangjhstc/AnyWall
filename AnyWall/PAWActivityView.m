@@ -31,6 +31,7 @@ static CGFloat const kPAWActivityViewActivityIndicatorPadding = 10.f;
 
 - (void)setLabel:(UILabel *)aLabel {
 	[_label removeFromSuperview];
+	_label = aLabel;
 	[self addSubview:aLabel];
 }
 
