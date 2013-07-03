@@ -17,6 +17,5 @@
 @property (nonatomic, strong) IBOutlet UITextField *passwordAgainField;
 
 - (IBAction)cancel:(id)sender;
-- (IBAction)done:(id)sender;
 
 @end
